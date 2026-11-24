@@ -46,14 +46,25 @@ namespace ConsoleApp4
             #endregion
             #region Q06
             //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0].Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
-            void ApplyDiscount(double[] prices)
-            {
-                prices[0] -= 5;
-            }
-            double[] prices = { 25.5, 40.0 };
-            ApplyDiscount(prices);
-            Console.WriteLine(prices[0]);
+            //void ApplyDiscount(double[] prices)
+            //{
+            //    prices[0] -= 5;
+            //}
+            //double[] prices = { 25.5, 40.0 };
+            //ApplyDiscount(prices);
+            //Console.WriteLine(prices[0]);
             // مش هيتغير لانه مرجعناش قيمه
+            #endregion
+            #region Q07
+            //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref. Call it and print pages afterward. How is the result different from question 5 ?
+            void AddBonusPagesByRef(ref int pages)
+            {
+                pages += 50;
+            }
+            int pages = 400;
+            AddBonusPagesByRef(ref pages);
+            Console.WriteLine(pages);
+            //هيزيد 50
             #endregion
         }
         //static void PrintWelcomeMessage()
