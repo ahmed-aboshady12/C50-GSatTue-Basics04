@@ -104,11 +104,23 @@ namespace ConsoleApp4
             #endregion
             #region Q11
             //Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
-            void PrintBookInfo(string title, int pages = 300)
+            //void PrintBookInfo(string title, int pages = 300)
+            //{
+            //    Console.WriteLine($"Book: {title}, Pages: {pages}");
+            //}
+            //PrintBookInfo(pages: 500, title: "Clean Code");
+            #endregion
+            #region Q12
+            //Write a method PrintAllTitles(params string[] titles) that prints each title on its own line. Call it with three book titles
+            void PrintAllTitles(params string[] titles)
             {
-                Console.WriteLine($"Book: {title}, Pages: {pages}");
+                for (int i = 0; i < titles.Length; i++)
+                {
+                    Console.WriteLine(titles[i]);
+                }
             }
-            PrintBookInfo(pages: 500, title: "Clean Code");
+            PrintAllTitles("1111", "1222", "11122");
+            #endregion
         }
         //static void PrintWelcomeMessage()
         //{
