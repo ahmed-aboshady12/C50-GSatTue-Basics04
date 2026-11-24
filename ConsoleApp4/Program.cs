@@ -26,11 +26,22 @@ namespace ConsoleApp4
             #endregion
             #region Q04
             //Write a method PrintBookTitle(string title) that prints "Book title: " + title.Call it with "Clean Code".
-            void PrintBookTitle(string title)
+            //void PrintBookTitle(string title)
+            //{
+            //    Console.WriteLine("Book title: " + title);
+            //}
+            //PrintBookTitle("Clean Code");
+            #endregion
+            #region Q05
+            //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
+            void AddBonusPages(int pages)
             {
-                Console.WriteLine("Book title: " + title);
+                pages += 50;
             }
-            PrintBookTitle("Clean Code");
+            int pages = 400;
+            AddBonusPages(pages);
+            Console.WriteLine(pages);
+            // اتوقع يطبع 400 لانه احنا مرجعناش ليه قيمه لانه void  لو عايز يرجع نخليه int 
             #endregion
         }
         //static void PrintWelcomeMessage()
