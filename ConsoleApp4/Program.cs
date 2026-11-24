@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Diagnostics;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp4
 {
@@ -34,14 +35,25 @@ namespace ConsoleApp4
             #endregion
             #region Q05
             //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable int pages = 400; and print pages afterward. What do you expect to see, and why?
-            void AddBonusPages(int pages)
-            {
-                pages += 50;
-            }
-            int pages = 400;
-            AddBonusPages(pages);
-            Console.WriteLine(pages);
+            //void AddBonusPages(int pages)
+            //{
+            //    pages += 50;
+            //}
+            //int pages = 400;
+            //AddBonusPages(pages);
+            //Console.WriteLine(pages);
             // اتوقع يطبع 400 لانه احنا مرجعناش ليه قيمه لانه void  لو عايز يرجع نخليه int 
+            #endregion
+            #region Q06
+            //Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0].Call it with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to see, and why?
+            void ApplyDiscount(double[] prices)
+            {
+                prices[0] -= 5;
+            }
+            double[] prices = { 25.5, 40.0 };
+            ApplyDiscount(prices);
+            Console.WriteLine(prices[0]);
+            // مش هيتغير لانه مرجعناش قيمه
             #endregion
         }
         //static void PrintWelcomeMessage()
