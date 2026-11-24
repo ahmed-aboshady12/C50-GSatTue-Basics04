@@ -69,15 +69,30 @@ namespace ConsoleApp4
             #endregion
             #region Q08
             //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length afterward.
-            void ReplaceArray(ref double[] prices)
-            {
-                prices =new double[]{ 10.0, 12.5, 15.0 };
-            }
-            double[] prices = { 25.5, 40.0 };
-            ReplaceArray(ref prices);
-            Console.WriteLine(prices.Length);
+            //void ReplaceArray(ref double[] prices)
+            //{
+            //    prices =new double[]{ 10.0, 12.5, 15.0 };
+            //}
+            //double[] prices = { 25.5, 40.0 };
+            //ReplaceArray(ref prices);
+            //Console.WriteLine(prices.Length);
             #endregion
+            #region Q09
+            //Write a method bool TryGetPrice(string title, out double price) that returns true and sets price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0.Call it 2 and print the price if found
 
+            bool TryGetPrice(string title, out double price)
+            {
+                if (title == "Clean Code")
+                {
+                    price = 25.5;
+                    return true;
+                }
+                price = 0;
+                return false;
+            }
+            TryGetPrice("Clean Code", out double price);
+            Console.WriteLine(price);
+            #endregion
         }
         //static void PrintWelcomeMessage()
         //{
