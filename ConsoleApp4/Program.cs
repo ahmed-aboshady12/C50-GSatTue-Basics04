@@ -96,12 +96,19 @@ namespace ConsoleApp4
             #endregion
             #region Q10
             //Write a method PrintBookInfo(string title, int pages = 300) where pages is optional.Call it once with only a title, and once passing both a title and pages
+            //void PrintBookInfo(string title, int pages = 300)
+            //{
+            //    Console.WriteLine($"Book: {title}, Pages: {pages}");
+            //}
+            //PrintBookInfo("Clean Code");
+            #endregion
+            #region Q11
+            //Using the PrintBookInfo method from the question above, call it by naming the parameters, passing pages before title.
             void PrintBookInfo(string title, int pages = 300)
             {
                 Console.WriteLine($"Book: {title}, Pages: {pages}");
             }
-            PrintBookInfo("Clean Code");
-            #endregion
+            PrintBookInfo(pages: 500, title: "Clean Code");
         }
         //static void PrintWelcomeMessage()
         //{
